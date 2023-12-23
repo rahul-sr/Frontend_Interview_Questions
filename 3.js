@@ -8,3 +8,4 @@ console.log(typeof 123433903490992390n);
 console.log(typeof Symbol("a"));
 console.log(typeof {});
 console.log(typeof [1, 2]);
+console.log(typeof null);

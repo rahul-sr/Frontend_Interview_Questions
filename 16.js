@@ -1,9 +1,13 @@
-function Welcome(name) {
-  var greetingInfo = function (message) {
-    console.log(message + " " + name);
+function counter() {
+  let count = 0;
+  return function (val) {
+    count = count + val;
+    return count;
   };
-  return greetingInfo;
 }
-var myFunction = Welcome("John");
-myFunction("Welcome "); //Output: Welcome John
-myFunction("Hello Mr."); //output: Hello Mr.John
+
+let changeCounter = counter();
+console.log(changeCounter(1));
+console.log(changeCounter(1));
+console.log(changeCounter(1));
+console.log(changeCounter(-1));
